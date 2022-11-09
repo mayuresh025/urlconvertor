@@ -53,7 +53,7 @@
             
         } .box {
             position: absolute;
-            top: 50%;
+            top: 40%;
             left: 50%;
             transform: translated(-50%, -50%);
         }
@@ -96,7 +96,7 @@
             opacity: 0;
             z-index: -1;
         }
-        .enter{
+        .cont{
             display: flex;
         }
 
@@ -117,7 +117,8 @@
         </ul>
     </div>
     <h1 class="url"> URL CONVERTER</h1>
-    <h2>Enter your URL</h2>
+    <div class="cont">
+         <h2>Enter your URL</h2>
     <div class="box">
         <form name="search">
             <input type="text" class="input" name="txt" onmouseout="document.search.txt.value = ' '">
@@ -125,8 +126,7 @@
         <i class="fas fa-search"></i>
     
     </div>
-    
-
+    </div>
 </body>
 
 </html>
