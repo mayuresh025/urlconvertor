@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>urlconv</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urlconv</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Dancing+Script&family=Lobster&family=Mukta:wght@200&family=Permanent+Marker&display=swap" rel="stylesheet">
     <style>
-        .navbar {
-            background-color: rgb(221, 201, 223);
+             .navbar {
+            background-color: rgb(245, 105, 198); opacity: 0.8; z-index: -1;
         }
+       
 
         * {
             margin: 0;
@@ -21,6 +24,7 @@
             text-decoration: none;
             list-style-type: none;
             padding: 1%;
+            
         }
 
         li {
@@ -28,6 +32,11 @@
             margin-left: 1%;
             padding: 1%;
             font-size: 20px;
+            font-weight: bolder;
+            background-color: rgb(240, 235, 235);
+            color: rgb(255, 255, 255);
+            border-radius: 15px;
+            color: black;
         }
 
         li:hover {
@@ -35,33 +44,34 @@
             color: whitesmoke;
             border-radius: 15px;
         }
-        .url{
-            text-align: center;
-            margin-top: 3%;
-            border: 2px rgb(203, 11, 203) solid;
-            width: fit-content;
-            margin-left: 40%;
-            padding: 2%;
-            background-color: rgb(221, 201, 223);
-            
+       h1{
+        color: white;
+        text-align: center;
+        margin-top: 18%;
+        font-size: 55px;
+        font-weight: bolder;
+        font-family: 'Concert One', cursive;
+        font-family: 'Dancing Script', cursive;
+        font-family: 'Lobster', cursive;
+        font-family: 'Mukta', sans-serif;
+        font-family: 'Permanent Marker', cursive;
+        
 
-
-        }
-        h2{
-            margin-top: 5%;
-            margin-left: 25%;
-            
-        } .box {
+        
+       }
+       h2{color: white;}
+       body{background-size: cover;}
+       .box {
             position: absolute;
-            top: 39%;
-            left: 40%;
-            transform: translated(-50%, -50%);
+            top: 65%;
+            left: 38.5%;
+            transform: translated(-40%, -40%);
         }
     
         .input {
-            padding: 10px;
+            padding: 2px;
             width: 80px;
-            height: 80px;
+            height: 50px;
             background: none;
             border: 4px solid #ffd52d;
             border-radius: 50px;
@@ -96,16 +106,20 @@
             opacity: 0;
             z-index: -1;
         }
-        .cont{
-            display: flex;
+        button{
+            padding: 0.8%;
+            margin-top: 6%;
+            margin-left: 47%;
+            border-radius: 18px;
+            background-color: #ffd52d;
+            font-size: 18px;
+            color: navy;
+            font-weight: bolder;
         }
-
-
        
     </style>
 </head>
-
-<body>
+<body background="musical-notes-frame-with-text-space_1017-32857-transformed.jpeg">
     <div class="navbar">
         <ul class="navel">
             <li>
@@ -116,17 +130,16 @@
             </li>
         </ul>
     </div>
-    <h1 class="url"> URL CONVERTER</h1>
-    <div class="cont">
-         <h2>Enter your URL</h2>
+    <h1>Url Converter</h1>
     <div class="box">
         <form name="search">
             <input type="text" class="input" name="txt" onmouseout="document.search.txt.value = ' '">
         </form>
         <i class="fas fa-search"></i>
+        </div>
+   
+    <button>Convert</button>
     
-    </div>
-    </div>
+    
 </body>
-
 </html>
